@@ -34,13 +34,14 @@ a {
 
 button {
   border: none;
+  cursor: pointer;
 }
 
-/* img {
+img {
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
-} */
+}
 
 /* #endregion */
 
@@ -52,8 +53,13 @@ button {
 }
 
 .btn {
+  min-width: 105px;
+
   font-weight: 700;
+  text-align: center;
+  border-radius: 4px;
   color: #fff;
+  background-color: #02897a;
 }
 /* #endregion */
 
@@ -72,6 +78,8 @@ button {
   align-items: center;
 }
 .logo-link {
+  display: flex;
+  align-items: center;
   margin-right: 237px;
 
   font-weight: 700;
@@ -92,8 +100,14 @@ button {
 .nav-link {
   display: block;
 
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.75;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  font-weight: 600;
 }
 
 .logo-link,
@@ -109,14 +123,23 @@ button {
 .header-btn-item {
   margin-right: 21px;
 }
-.header-btn {
+
+.header-btn-in {
   padding-top: 9px;
   padding-bottom: 9px;
 
-  min-width: 105px;
   font-weight: 600;
-  text-align: center;
+
+  border: 1px solid #bcd0e5;
   color: #173a56;
+  background-color: inherit;
+}
+
+.header-btn-up {
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  font-weight: 600;
 }
 
 /* #endregion */
